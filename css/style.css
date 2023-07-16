@@ -1,0 +1,92 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1{
+    text-align: center;
+}
+span{
+    display: block;
+    line-height: 2rem;
+    padding: 0% 3%;
+    text-align: right;
+}
+
+.container-top {
+    justify-content: center;
+    margin: auto;
+    border: 1px black solid;
+    width: 350px;
+    padding: 5px;
+}
+
+.display-window{
+    align-items: center;
+    text-align: right;
+    margin: 0 auto;
+    border: 1px black solid;
+    width: 300px;
+    height: 75px;
+    padding: 2px;
+}
+
+ul{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    border: 3px black solid;
+    width: 350px;
+    margin: 0 auto;
+    padding: 5px;
+    
+}
+
+li{
+    height: 100px;
+    min-width: 100px;
+    /*would be flexed and have them all sit next to eachother - force 3 buttons per row 
+    if just with: buttons spills out of item */
+    
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    /*Button sit inside item in center*/
+
+}
+
+button{
+    padding: 20px;
+    /*button goes into original small size*/
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
